@@ -25,7 +25,7 @@ class SongList extends React.Component {
     var artistTracks = this.props.data.map(function(song) {
         return(
           <li className="col-md-6" key={song.id}>
-            <figure className="song-thumbnail" style={{ backgroundImage: 'url('+song.album.images[1].url+')'}}></figure>
+            <figure className="song-thumbnail" style={{ backgroundImage: song.album.images.length > 1 ? 'url('+song.album.images[1].url+')' : ''}}></figure>
             <a className="song-link"  href={song.external_urls.spotify} target="_blank">
               <span className="song-name">{song.name}</span>
               <span className="song-album-name">{song.album.name}</span>

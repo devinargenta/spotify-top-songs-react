@@ -21,7 +21,6 @@ class SpotifyApp extends React.Component {
 
         }
         getSongs (url){
-
           $.ajax({
             url: url.href+'/top-tracks?country=US',
             success: function(data){
@@ -41,8 +40,6 @@ class SpotifyApp extends React.Component {
           $.ajax({
             url: url.href+'/related-artists',
             success: function(related){
-              console.log(related);
-
               this.setState({related: related.artists});
             }.bind(this),
             error: function(xhr, status, err) {
