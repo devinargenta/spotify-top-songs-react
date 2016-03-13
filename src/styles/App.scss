@@ -1,0 +1,108 @@
+/* Base Application Styles */
+$dark: #2c3940;
+$l-grey: #f0f0f0;
+body {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2em;
+  background: #fff;
+  input {
+    color: $dark;
+  }
+}
+main {
+  // max-width: 980px;
+  // margin: 0 auto;
+}
+h4 {
+  font-size: 14px;
+}
+.header {
+  background: $dark;
+  box-shadow: inset 0 -2px 5px darken($dark, 5%);
+  padding: 40px 20px;
+}
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.input-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.artist-title {
+  text-transform: capitalize;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.song-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  line-height: 1.1em;
+  li {
+    transition: .3s all ease-in-out;
+    margin-bottom: 20px;
+    position: relative;
+
+    a {
+          box-shadow: 0 1px 1px rgba(#000, .2);
+          display: block;
+          background: #f0f0f0;
+          padding: 20px;
+          padding-left: 25%;
+
+    }
+  }
+}
+
+
+.song-link {
+  height: 120px;
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+  > span {
+    display: block;
+          float: left;
+  }
+}
+.song-name {
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+.song-album-name {
+  font-size: 16px;
+  font-weight: 300;
+  clear: both;
+  text-transform: uppercase;
+}
+.song-thumbnail {
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  background-position: center;
+  box-shadow: 0 2px 1px rgba(#000, .2);
+}
+.related-artists-container {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.related-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+}
